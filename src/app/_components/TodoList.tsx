@@ -79,7 +79,7 @@ export default function TodoList() {
       id: editingId,
       title: editText,
       completed:
-        todos.find((todo) => todo.id === editingId)?.completed || false,
+        todos.find((todo) => todo.id === editingId)?.completed ?? false,
     });
     setEditingId(null);
   };
